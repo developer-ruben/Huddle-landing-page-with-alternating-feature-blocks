@@ -1,0 +1,119 @@
+// FOOTER
+
+.footer {
+  position: relative;
+  background-color: $color-neutral-very-dark-cyan;
+  padding: 14.4rem 0 6.4rem 0;
+  color: $color-neutral-white;
+  font-size: 1.4rem;
+
+  @include mobile {
+    padding: 13.9rem 0 4.6rem 0;
+  }
+
+  .container {
+    display: flex;
+    gap: 13rem;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  &__logo {
+    filter: brightness(0) invert(1);
+    margin-bottom: 3.2rem;
+  }
+
+  &__content {
+    max-width: 379px;
+
+    @include mobile {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  &__item {
+    display: flex;
+    gap: 2.7rem;
+    align-items: start;
+  }
+
+  &__icon {
+    margin-top: 6px;
+  }
+
+  &__nav {
+    padding-top: 55px;
+
+    @include mobile {
+      padding: 0 0 1.6rem 0;
+    }
+
+    &:last-of-type {
+      padding-bottom: 2.4rem;
+    }
+  }
+
+  &__link {
+    color: $color-neutral-white;
+    text-decoration: none;
+  }
+
+  &__socials {
+    padding-top: 55px;
+
+    @include mobile {
+      padding: 0;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .footer__list {
+      flex-direction: row;
+      gap: 1.2rem;
+
+      @include mobile {
+        justify-content: center;
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+
+  &__social-link {
+    width: 31px;
+    height: 31px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 0.92px solid $color-neutral-white;
+    border-radius: 100%;
+
+    ion-icon {
+      font-size: 1.5rem;
+      color: $color-neutral-white;
+    }
+  }
+
+  &__copyright {
+    font-size: 1.2rem;
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+}

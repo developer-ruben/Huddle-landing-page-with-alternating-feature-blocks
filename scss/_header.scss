@@ -1,0 +1,26 @@
+.header {
+  position: absolute;
+  width: 100%;
+  max-width: 1232px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding-top: 6.8rem;
+
+  @include mobile {
+    padding-top: 2.7rem;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    @include mobile {
+      width: 104px;
+      height: 16px;
+    }
+  }
+}

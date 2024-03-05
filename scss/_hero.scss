@@ -1,0 +1,37 @@
+.hero {
+  padding: 18.7rem 0 7.2rem 0;
+  background-image: url("../images/bg-hero-desktop.svg");
+  background-color: $color-neutral-very-pale-cyan;
+
+  @include mobile {
+    padding: 13.1rem 0 3.7rem 0;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 536px 1fr;
+    align-items: center;
+    gap: 5.4rem;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      text-align: center;
+      padding: 0 4rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3.2rem;
+
+    @include mobile {
+      align-items: center;
+    }
+  }
+
+  &__image {
+    height: auto;
+  }
+}

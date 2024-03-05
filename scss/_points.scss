@@ -1,0 +1,51 @@
+.points-section {
+  padding: 16rem 0 34.4rem 0;
+
+  @include mobile {
+    padding: 5.9rem 0 22.9rem 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+.point {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 14px 0 hsla(0, 0%, 0%, 0.0711);
+  border-radius: 1.6rem;
+  min-height: 440px;
+  padding: 0 1.6rem 0 12rem;
+
+  @include mobile {
+    padding: 5.6rem 4rem 3.3rem 4rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__image {
+    max-width: 440px;
+
+    @include mobile {
+      width: 100%;
+      order: -1;
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__content {
+    max-width: 500px;
+  }
+
+  &__title {
+    margin-bottom: 1.6rem;
+  }
+
+  &__text {
+    color: $color-neutral-grayish-blue;
+  }
+}

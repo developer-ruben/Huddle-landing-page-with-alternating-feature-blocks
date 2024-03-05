@@ -1,0 +1,18 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 1rem;
+
+  @include mobile {
+    display: none;
+  }
+
+  a {
+    color: $color-neutral-grayish-blue;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
